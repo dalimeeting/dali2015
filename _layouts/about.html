@@ -22,7 +22,7 @@ title: about
 	    <p>&nbsp;</p>
 	    {% if site.conference.sponsors %}
 	    <p>This event is sponsored and co-organized by</p>
-	    {% for sponsors in site.conference.sponsors %}
+	    {% for sponsor in site.conference.sponsors %}
 	    <br>{{ sponsor.name }}</br>
 	    {% endfor %}
 	    {% endif %}
@@ -33,13 +33,13 @@ title: about
 	    <p><strong>Organizers</strong></p>
 	    <p>overall:</p>
 	    {% for person in site.conference.organizers %}
-	    <br>[{{ person.name }}]({{ person.url }}) {{ person.institute }}</br>
+	    <br>{% if person.url %}<a href="{{ person.url }}">{% endif %}{{ person.name }}{% if person.url %}</a>{% endif %} {{ person.institute }}</br>
 	    {% endfor %}
 	    {% endif %}
 	    {% if site.conference.fundraising %}
 	    <p>fundraising:</p>
 	    {% for person in site.conference.fundraising %}
-	    <br>[{{ person.name }}]({{ person.url }}) {{ person.institute }}</br>
+	    <br>{% if person.url %}<a href="{{ person.url }}">{% endif %}{{ person.name }}{% if person.url %}</a>{% endif %} {{ person.institute }}</br>
 	    {% endfor %}
 	    {% endif %}
 	    <p>&nbsp;</p>
