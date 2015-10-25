@@ -1,7 +1,7 @@
 ---
 title:  "Networks – Processes and Causality"
 type: symposium
-organisers:
+organizers:
 - firstname: Thomas
   lastname: Hofmann
 talks:

@@ -2,7 +2,7 @@
 title:  "Probabilistic Programming"
 type: workshop
 url: http://www.eng.ox.ac.uk/dali
-organisers:
+organizers:
 - firstname: Frank
   lastname: Wood
 - firstname: Zoubin

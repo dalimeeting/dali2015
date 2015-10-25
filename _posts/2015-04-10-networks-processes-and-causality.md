@@ -2,7 +2,7 @@
 title:  "Networks – Processes and Causality"
 type: workshop
 url: http://networks-dali-workshop.mpi-sws.org/
-organisers:
+organizers:
 - firstname: Manuel
   lastname: Gomez-Rodriguez
 - firtsname: Jonas

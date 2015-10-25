@@ -1,7 +1,7 @@
 ---
 title:  "Learning Theory"
 type: workshop
-organisers:
+organizers:
 - firstname: Nicolò
   lastname: Cesa-Bianchi
 - firstname: Ulrike

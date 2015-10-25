@@ -2,7 +2,7 @@
 title:  "Deep Learning in Vision"
 type: workshop
 url: http://cs.nyu.edu/~fergus/dali15/pmwiki/pmwiki.php
-organisers:
+organizers:
 - firstname: Rob
   lastname: Fergus
 - firstname: Antonio
