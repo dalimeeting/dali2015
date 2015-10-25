@@ -1,24 +1,21 @@
-      <footer id="colophon" class="clearfix"> 
-      
- 
-      <div class="footer-socket-wrapper clearfix">
-        <div class="inner-wrap">
-          <div class="footer-socket-area">
-            <div class="copyright"><a href="http://isweb.is.tuebingen.mpg.de/dali/?page_id=175">Imprint</a></div>
-            <nav class="footer-menu" class="clearfix">
-              <div class="menu-menu-1-container"><ul id="menu-menu-2" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-29 current_page_item menu-item-30"><a href="http://isweb.is.tuebingen.mpg.de/dali/">About</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://isweb.is.tuebingen.mpg.de/dali/?page_id=6">Schedule</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="http://isweb.is.tuebingen.mpg.de/dali/?page_id=8">Register</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="http://isweb.is.tuebingen.mpg.de/dali/?page_id=10">Venue</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a href="http://isweb.is.tuebingen.mpg.de/dali/?page_id=12">Contact</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="http://isweb.is.tuebingen.mpg.de/dali/?page_id=196">La Isla Bonita</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-311"><a href="http://isweb.is.tuebingen.mpg.de/dali/?page_id=306">Participants</a></li>
-</ul></div>              </nav>
-          </div>
-        </div>
-      </div>      
-    </footer>
-    <a href="#masthead" id="scroll-up"><i class="fa fa-long-arrow-up"></i></a>  
-  </div><!-- #page -->
-  <script type='text/javascript' src='http://isweb.is.tuebingen.mpg.de/dali/wp-content/themes/accelerate/js/navigation.js?ver=4.0'></script>
-<script type='text/javascript' src='http://isweb.is.tuebingen.mpg.de/dali/wp-content/themes/accelerate/js/modal.js?ver=4.0'></script>
+<footer id="colophon" class="clearfix"> 
+  <div class="footer-socket-wrapper clearfix">
+    <div class="inner-wrap">
+      <div class="footer-socket-area">
+        <div class="copyright"><a href="http://isweb.is.tuebingen.mpg.de/dali/?page_id=175">Imprint</a></div>
+        <nav class="footer-menu" class="clearfix">
+          <div class="menu-menu-1-container">
+	    <ul id="menu-menu-2" class="menu">	      
+              {% for page in site.pages %}
+              {% if page.title %}
+              <li class="menu-item menu-item-type-post_type menu-item-object-page {{ page.title }}"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              {% endif %}
+              {% endfor %}  
+	    </ul>
+	  </div>
+	</nav>
+      </div>
+    </div>
+  </div>      
+</footer>
+<a href="#masthead" id="scroll-up"><i class="fa fa-long-arrow-up"></i></a>  
