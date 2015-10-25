@@ -16,7 +16,7 @@ title: Schedule
 	    <p>We have lined up the following <strong>workshops</strong> (names of organisers in parentheses):</p>
 	    {% for post in site.posts %}
 	    {% if post.type == "workshop" %}
-            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({% for organiser in site.organisers %}{% if organiser.url %}<a href="{{ organiser.url }}">{% endif %}{% organiser.firstname %} {% organiser.lastname %}{% if organiser.url %}</a>{% endif %}{% if site.organisers | size>1 %}, {% endif %}){% endfor %} ({{ post.date | date: "%b %-d" }})</p>
+            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({% for organizer in site.organizers %}{% if organizer.url %}<a href="{{ organizer.url }}">{% endif %}{{ organizer.firstname }} {{ organizer.lastname }}{% if organizer.url %}</a>{% endif %}{% if site.organizers | size>1 %}, {% endif %}){% endfor %} ({{ post.date | date: "%b %-d" }})</p>
 	    {% endif %}
 	    {% endfor %}
 	    {{ content }}
