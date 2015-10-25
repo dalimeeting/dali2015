@@ -23,7 +23,7 @@ talks:
   start: "18:00"
   end: "18:30"
   speaker: Philipp Hennig, MPI Tübingen
-- title: "Panel Discussion:"
+- title: "Panel Discussion"
   start: "19:00"
   end: "20:00"
   speaker: "Thomas Hoffman (Chair, ETH Zurich), Ralf Herbrich (Amazon), Alex Graves (Google DeepMind), Yann Le Cun (Facebook AI Research), Bernhard Scholkopf (MPI Tuebingen), Neil Lawrence (University of Sheffield) and Zoubin Ghaharamani (University of Cambridge)"
