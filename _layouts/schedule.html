@@ -1,0 +1,37 @@
+---
+layout: page
+title: Schedule
+---
+
+<div id="main" class="clearfix">
+  <div class="inner-wrap clearfix">
+    
+    <div id="primary">
+      <div id="content" class="clearfix">
+	
+	
+	<article id="post-6" class="post-6 page type-page status-publish hentry">
+	  
+	  <div class="entry-content clearfix">
+	    <p>We have lined up the following <strong>workshops</strong> (names of organisers in parentheses):</p>
+	    {% for post in site.posts %}
+	    {% if post.type == "workshop" %}
+            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({% for organiser in post.organisers %}{% if organiser.url %}<a href="{{ organiser.url }}">{% endif %}{% organiser.firstname %} {% organiser.lastname %}{% if organiser.url %}</a>{% endif %}{% if post.organisers | size>1 %}, {% endif %}){% endfor %} ({{ post.date | date: "%b %-d" }})</p>
+	    {% endif %}
+	    {% endfor %}
+	    {{ content }}
+
+
+	</article>
+
+
+	
+	
+      </div><!-- #content -->
+    </div><!-- #primary -->
+    
+    
+    
+
+  </div><!-- .inner-wrap -->
+</div><!-- #main -->  
