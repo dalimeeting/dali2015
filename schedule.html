@@ -33,7 +33,7 @@ banner: DSC013361.jpeg
 
 {% for post in site.posts %}
 {% if post.type == "symposium" %}
-{% for talk in posts.talks %}
+{% for talk in post.talks %}
 <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} {{ talk.speaker }}: talk.title </p>
 {% endfor %}
 {% endif %}
