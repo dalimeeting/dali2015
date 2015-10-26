@@ -5,11 +5,11 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">({% if post.organizers %}{% for organizer in post.organizers %}{% if organizer.url %}<a href="{{ organizer.url }}">{% endif %}{{ organizer.firstname }} {{ organizer.lastname }}{% if organizer.url %}</a>{% endif %}{% if post.organizers | size>1 %}, {% endif %}{% endfor %}{% endif %} {{ post.date | date: "%b %-d" }})</p>
+    <p class="post-meta">({% if page.organizers %}{% for organizer in page.organizers %}{% if organizer.url %}<a href="{{ organizer.url }}">{% endif %}{{ organizer.firstname }} {{ organizer.lastname }}{% if organizer.url %}</a>{% endif %}{% if page.organizers | size>1 %}, {% endif %}{% endfor %}{% endif %} {{ page.date | date: "%b %-d" }})</p>
   </header>
 
   <article class="post-content">
-    {% if page.url %}<a href="{{ page.url }}">Organiser's workshop page</a>{% endif %}
+    {% if page.organizer_url %}<a href="{{ page.url }}">Organizer's workshop page</a>{% endif %}
 
     {% for talk in page.talks %}
     <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} {{ talk.speaker }}: {{ talk.title }}</p>

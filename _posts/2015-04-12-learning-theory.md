@@ -1,6 +1,7 @@
 ---
 title:  "Learning Theory"
 layout: workshop
+organizer_url: http://cesa-bianchi.di.unimi.it/DALI/
 organizers:
 - firstname: Nicolò
   lastname: Cesa-Bianchi
