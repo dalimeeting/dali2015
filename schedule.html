@@ -12,38 +12,3 @@ banner: DSC013361.jpeg
   <li>Friday 10th April: 08:30 &#8211; 09:15</li>
 </ul>
 
-<h3>Thursday 9 April:</h3>
-<p><em>19 Pre-dinner drinks reception and conference opening, social room<br />
-
-</em></p>
-
-<p>20 dinner (for those booking half pension in the hotel)</p>
-
-<h3>Friday 10 April:</h3>
-
-<p><em>Workshops Day 1</em></p>
-<p>9:30-13 morning session, with a coffee break at 11</p>
-<p>13-18 lunch and individual activities</p>
-<p>18-20 afternoon session</p>
-<p>20 dinner (for those booking half pension in the hotel)</p>
-
-<h3>Saturday 11 April:</h3>
-
-<p><em>Single track symposium</em></p>
-
-{% for post in site.posts %}
-{% if post.layout == "symposium" %}
-
-{% for talk in post.talks %}
-<p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} {{ talk.speaker }} {{ talk.title }}</p>
-{% endfor %}
-{% endif %}
-{% endfor %}
-
-<h3>Sunday 12 April:</h3>
-<p><em>Workshops Day 2</em></p>
-<p>9:30-13 morning session, with a coffee break at 11</p>
-<p>13-18 lunch and individual activities</p>
-<p>18-20 afternoon session</p>
-<p>20 dinner (for those booking half pension in the hotel)</p>
-</div>

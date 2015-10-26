@@ -2,39 +2,30 @@
 layout: page
 title: Schedule
 ---
-
-<div id="main" class="clearfix">
-  <div class="inner-wrap clearfix">
-    
-    <div id="primary">
-      <div id="content" class="clearfix">
 	
-	
-	<article id="post-6" class="post-6 page type-page status-publish hentry">
+<article>
 	  
-	  <div class="entry-content clearfix">
-	    <p>We have lined up the following <strong>workshops</strong> (names of organisers in parentheses):</p>
-	    {% for post in site.posts %}
-	    {% if post.layout == "workshop" %}
-            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({% if post.organizers %}{% for organizer in post.organizers %}{% if organizer.url %}<a href="{{ organizer.url }}">{% endif %}{{ organizer.firstname }} {{ organizer.lastname }}{% if organizer.url %}</a>{% endif %}{% if post.organizers | size>1 %}, {% endif %}{% endfor %}{% endif %} {{ post.date | date: "%b %-d" }})</p>
-	    {% endif %}
-	    {% endfor %}
+  {{ content }}
+  
+  <p>We have lined up the following <strong>workshops</strong> (names of organisers in parentheses):</p>
+  {% for post in site.posts %}
+  {% if post.layout == "workshop" %}
+  <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({% if post.organizers %}{% for organizer in post.organizers %}{% if organizer.url %}<a href="{{ organizer.url }}">{% endif %}{{ organizer.firstname }} {{ organizer.lastname }}{% if organizer.url %}</a>{% endif %}{% if post.organizers | size>1 %}, {% endif %}{% endfor %}{% endif %} {{ post.date | date: "%b %-d" }})</p>
+  {% endif %}
+  {% endfor %}
+  
+  {% for post in site.posts reversed %}
+  {% if post.layout == "day" %}
+  <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%A %B %-d" }}</a>  <i>{{ post.tagline }}</i> </p>
+  
+  {% for talk in post.talks %}
+  <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} <b>{{ talk.title }}</b> {{ talk.speaker }} </p>
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
 
-	    {% for post in site.posts reversed %}
-	    {% if post.layout == "day" %}
-            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%A %B %-d" }}</a>  <i>{{ post.tagline }}</i> </p>
-
-	    {% for talk in post.talks %}
-	    <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} <b>{{ talk.title }}</b> {{ talk.speaker }} </p>
-	    {% endfor %}
-	    {% endif %}
-	    {% endfor %}
-
-	    
-	    {{ content }}
-
-
-	</article>
+  
+</article>
 
 
 	
