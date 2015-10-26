@@ -27,7 +27,7 @@ title: Schedule
 	    {% for talk in post.talks %}
 	    <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} <b>{{ talk.title }}</b> {{ talk.speaker }} </p>
 	    {% endfor %}
-	    
+	    {% endif %}
 	    {% endfor %}
 
 	    
