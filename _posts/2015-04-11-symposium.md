@@ -1,5 +1,5 @@
 ---
-title:  "Networks – Processes and Causality"
+title:  "DALI Symposium"
 layout: symposium
 organizers:
 - firstname: Thomas
