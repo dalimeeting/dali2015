@@ -32,7 +32,7 @@ conference:
     institute: Facebook
   sponsors:
   - name: Max-Planck-ETH Center for Learning Systems
-baseurl: "/dali2015/" # the subpath of your site, e.g. /blog/
+baseurl: "/dali2015" # the subpath of your site, e.g. /blog/
 url: "http://dalimeeting.github.io" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  dalimeeting
