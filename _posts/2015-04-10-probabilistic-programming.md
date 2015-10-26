@@ -1,7 +1,7 @@
 ---
 title:  "Probabilistic Programming"
 layout: workshop
-url: http://www.eng.ox.ac.uk/dali
+organizer_url: http://www.eng.ox.ac.uk/dali
 organizers:
 - firstname: Frank
   lastname: Wood

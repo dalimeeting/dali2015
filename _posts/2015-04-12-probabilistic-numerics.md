@@ -1,7 +1,7 @@
 ---
 title:  "Probabilistic Numerics"
-type: workshop
-url: http://www.probabilistic-numerics.org/meetings/LaPalma.html
+layout: workshop
+organizer_url: http://www.probabilistic-numerics.org/meetings/LaPalma.html
 organizers:
 - firstname: Phillip 
   lastname: Hennig
