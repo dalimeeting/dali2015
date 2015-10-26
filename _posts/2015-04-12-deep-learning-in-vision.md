@@ -1,6 +1,6 @@
 ---
 title:  "Deep Learning in Vision"
-type: workshop
+layout: workshop
 url: http://cs.nyu.edu/~fergus/dali15/pmwiki/pmwiki.php
 organizers:
 - firstname: Rob
