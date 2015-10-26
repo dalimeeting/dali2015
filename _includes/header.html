@@ -1,29 +1,9 @@
 <header class="site-header">
 
-    <div id="header-text-nav-container" class="clearfix">
-      
-      
-      <div class="inner-wrap">
-	
-	<div id="header-text-nav-wrap" class="clearfix">
-	  <div id="header-left-section">
-	    <div id="header-text">
-	      <h1 id="site-title"> 
-		<a href="{{ site.baseurl }}/" title="{{ site.title }}" rel="home">{{ site.title }}</a>
-	      </h1>
-	      <h2 id="site-description">{{ site.title }}</h2><!-- #site-description -->
-	    </div><!-- #header-text -->
-	  </div><!-- #header-left-section -->
-	  <div id="header-right-section">
-	    
-	  </div><!-- #header-right-section --> 
-	  
-	</div><!-- #header-text-nav-wrap -->
-	
-      </div><!-- .inner-wrap -->
-      
-      <div class="header-image-wrap"><div class="inner-wrap"><img src="{{ page.banner | prepend: "/assets/" | prepend: site.baseurl }}" class="header-image" width="1280" height="290" alt="{{ site.title }}"></div>
-      
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -41,9 +21,7 @@
         {% endfor %}
       </div>
     </nav>
-    </div><!-- #header-text-nav-container -->
-    
-    
+
   </div>
-  
+
 </header>
