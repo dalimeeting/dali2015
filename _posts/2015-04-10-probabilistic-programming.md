@@ -1,6 +1,6 @@
 ---
 title:  "Probabilistic Programming"
-type: workshop
+layout: workshop
 url: http://www.eng.ox.ac.uk/dali
 organizers:
 - firstname: Frank

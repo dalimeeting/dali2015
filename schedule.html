@@ -32,9 +32,11 @@ banner: DSC013361.jpeg
 <p><em>Single track symposium</em></p>
 
 {% for post in site.posts %}
-{% if post.type == "symposium" %}
+{% if post.layout == "symposium" %}
+
 {% for talk in post.talks %}
 <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} {{ talk.speaker }}: {{ talk.title }}</p>
+
 {% endfor %}
 {% endif %}
 {% endfor %}
