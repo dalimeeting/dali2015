@@ -20,9 +20,9 @@ title: Schedule
 	    {% endif %}
 	    {% endfor %}
 
-	    {% for post in site.posts %}
+	    {% for post in site.posts | reversed %}
 	    {% if post.layout == "day" %}
-            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>  {{ post.tagline }} {{ post.date | date: "%b %-d" }}</p>
+            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d" }}</a>  {{ post.tagline }} </p>
 	    {% endif %}
 	    {% endfor %}
 
