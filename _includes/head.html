@@ -1,7 +1,4 @@
 <head>
-  <!-- This site uses the WordPress Twitter Bootstrap CSS plugin v3.2.0-4 from iControlWP http://icwp.io/w/ -->
-  <link rel="stylesheet" type="text/css" href="http://isweb.is.tuebingen.mpg.de/dali/wp-content/plugins/wordpress-bootstrap-css/resources/bootstrap-3.2.0/css/bootstrap.min.css" />
-  <!-- / WordPress Twitter Bootstrap CSS Plugin from iControlWP. -->
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +7,7 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <link rel="stylesheet" type="{{ "text/css" | prepent: site.baseurl }}" href="/css/bootstrap.min.css" />
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
