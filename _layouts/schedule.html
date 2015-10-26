@@ -19,6 +19,14 @@ title: Schedule
             <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({% if post.organizers %}{% for organizer in post.organizers %}{% if organizer.url %}<a href="{{ organizer.url }}">{% endif %}{{ organizer.firstname }} {{ organizer.lastname }}{% if organizer.url %}</a>{% endif %}{% if post.organizers | size>1 %}, {% endif %}{% endfor %}{% endif %} {{ post.date | date: "%b %-d" }})</p>
 	    {% endif %}
 	    {% endfor %}
+
+	    {% for post in site.posts %}
+	    {% if post.layout == "day" %}
+            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>  {{ post.tagline }} {{ post.date | date: "%b %-d" }}</p>
+	    {% endif %}
+	    {% endfor %}
+
+	    
 	    {{ content }}
 
 
