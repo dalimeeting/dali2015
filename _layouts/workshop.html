@@ -13,7 +13,7 @@ layout: default
 
     {% for talk in page.talks %}
     <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} {{ talk.speaker }}: {{ talk.title }}</p>
-
+    {% endfor %}
     {{ content }}
   </article>
 
