@@ -9,10 +9,10 @@ layout: default
   </header>
 
   <article class="post-content">
-    {% if page.organizer_url %}<a href="{{ page.organizer_url }}">Organizer's workshop page</a>{% endif %}
+    <p>{% if page.organizer_url %}<a href="{{ page.organizer_url }}">Organizer's workshop page</a>{% endif %}</p>
 
     {% for talk in page.talks %}
-    <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} {{ talk.speaker }}: {{ talk.title }}</p>
+    <br>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} <b>{{ talk.title }}</b> {{ talk.speaker }}</br>
     {% endfor %}
     {{ content }}
   </article>
