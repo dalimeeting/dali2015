@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">({% if post.organizers %}{% for organizer in post.organizers %}{% if organizer.url %}<a href="{{ organizer.url }}">{% endif %}{{ organizer.firstname }} {{ organizer.lastname }}{% if organizer.url %}</a>{% endif %}{% if post.organizers | size>1 %}, {% endif %}{% endfor %}{% endif %} {{ post.date | date: "%b %-d" }})</p>
+  </header>
+
+  <article class="post-content">
+    {% if page.url %}<a href="{{ page.url }}">Organiser's workshop page</a>{% endif %}
+
+    {% for talk in page.talks %}
+    <p>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} {{ talk.speaker }}: {{ talk.title }}</p>
+
+    {{ content }}
+  </article>
+
+</div>
