@@ -9,10 +9,10 @@ layout: default
     
   </header>
   
-  {{ content }}
-
   <article class="post-content">
     
+    {{ content }}
+
     {% for post in site.posts %}
     {% unless post.layout == "day" %}
     {% if post.date == page.date %}
@@ -21,6 +21,11 @@ layout: default
     {% endunless %}
     {% endfor %}
 
+    {% for talk in page.talks %}
+    <br>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %} <b>{{ talk.title }}</b> {{ talk.speaker }}</br>
+    {% endfor %}
+    
+    
   </article>
 
 </div>
