@@ -11,6 +11,8 @@ remote_theme: lawrennd/proceedings
 style: dali
 
 conference:
+  venue: Hotel H10 Taburiente Playa
+  venue_url: http://www.hotelh10taburienteplaya.com/en/index.html
   hosts:
   organizers:
   - family: Ghaharamani
