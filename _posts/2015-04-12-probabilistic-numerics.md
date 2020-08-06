@@ -3,12 +3,12 @@ title:  "Probabilistic Numerics"
 layout: multitrack
 organizer_url: http://www.probabilistic-numerics.org/meetings/LaPalma.html
 organizers:
-- firstname: Phillip 
-  lastname: Hennig
-- firstname: Mike
-  lastname: Osborne
-- firstname: Mark
-  lastname: Girolami
+- given: Phillip 
+  family: Hennig
+- given: Mike
+  family: Osborne
+- given: Mark
+  family: Girolami
 talks:
 - title: "Morning Session 1"
   start: "09:30"
