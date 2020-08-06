@@ -3,10 +3,10 @@ title:  "Deep Learning in Vision"
 layout: workshop
 organizer_url: http://cs.nyu.edu/~fergus/dali15/pmwiki/pmwiki.php
 organizers:
-- firstname: Rob
-  lastname: Fergus
-- firstname: Antonio
-  lastname: Torralba
+- given: Rob
+  family: Fergus
+- given: Antonio
+  family: Torralba
 talks:
 - title: "Morning Session 1"
   start: "09:30"
