@@ -3,12 +3,12 @@ title:  "Networks – Processes and Causality"
 layout: workshop
 organizer_url: http://networks-dali-workshop.mpi-sws.org/
 organizers:
-- firstname: Manuel
-  lastname: Gomez-Rodriguez
-- firtsname: Jonas
-  lastname: Peters
-- firstname: Andreas
-  lastname: Krause
+- given: Manuel
+  family: Gomez-Rodriguez
+- given: Jonas
+  family: Peters
+- given: Andreas
+  family: Krause
 talks:
 - title: "Morning Session 1"
   start: "09:30"
