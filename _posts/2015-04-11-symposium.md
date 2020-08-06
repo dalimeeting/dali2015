@@ -1,6 +1,6 @@
 ---
 title:  "DALI Symposium"
-layout: symposium
+layout: singletrack
 organizers:
 - firstname: Thomas
   lastname: Hofmann

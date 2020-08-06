@@ -1,6 +1,6 @@
 ---
 title:  "Networks – Processes and Causality"
-layout: workshop
+layout: multitrack
 organizer_url: http://networks-dali-workshop.mpi-sws.org/
 organizers:
 - firstname: Manuel

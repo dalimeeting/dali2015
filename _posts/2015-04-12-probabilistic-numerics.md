@@ -1,6 +1,6 @@
 ---
 title:  "Probabilistic Numerics"
-layout: workshop
+layout: multitrack
 organizer_url: http://www.probabilistic-numerics.org/meetings/LaPalma.html
 organizers:
 - firstname: Phillip 
