@@ -3,10 +3,10 @@ title:  "Probabilistic Programming"
 layout: workshop
 organizer_url: http://www.eng.ox.ac.uk/dali
 organizers:
-- firstname: Frank
-  lastname: Wood
-- firstname: Zoubin
-  lastname: Ghaharamani
+- given: Frank
+  family: Wood
+- given: Zoubin
+  family: Ghaharamani
 talks:
 - title: "Morning Session 1"
   start: "09:30"
