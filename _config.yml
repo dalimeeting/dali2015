@@ -21,6 +21,7 @@ ghub:
   repository: dali2015
 
 conference:
+  instance: 1st
   full_name: Data Learning and Inference
   name: Data Learning and Inference
   short_name: DALI
