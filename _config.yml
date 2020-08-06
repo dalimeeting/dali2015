@@ -29,15 +29,17 @@ conference:
     family: Schölkopf
     url: "http://ei.is.tuebingen.mpg.de/person/bs"
     institute: MPI Tübingen
-  name: DALI 2015 - Data Learning and Inference
-  location: La Palma (Canaries, Spain)
+  full_name: Data Learning and Inference
+  name: Data Learning and Inference
+  short_name: DALI
+  location: La Palma, Canary Islands, Spain
   year: 2015
   month: April
   dates:
   - {date: 10, day: Friday, month: April, year: 2015}
   - {date: 11, day: Saturday, month: April, year: 2015}
   - {date: 12, day: Sunday, month: April, year: 2015}
-  draft: N # set to Y if the programme is draft only.
+  draft: false # set to true if the programme is draft only.
   fundraising:
   - given: Joaquin 
     family: Quiñonero Candela
@@ -46,9 +48,11 @@ conference:
   sponsors:
   - name: Max-Planck-ETH Center for Learning Systems
 baseurl: "/dali2015" # the subpath of your site, e.g. /blog/
-url: "http://dalimeeting.github.io" # the base hostname & protocol for your site
+url: "http://dalimeeting.org" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  dalimeeting
+author:
+  name: DALI
 
 # Build settings
 markdown: kramdown
