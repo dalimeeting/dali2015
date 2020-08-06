@@ -10,6 +10,10 @@ plugins:
 remote_theme: lawrennd/proceedings
 style: dali
 
+ghub:
+  edit: true
+  repository: dali2015
+
 conference:
   hosts:
   organizers:
@@ -36,9 +40,9 @@ conference:
   year: 2015
   month: April
   dates:
-  - {date: 10, day: Friday, month: April, year: 2015}
-  - {date: 11, day: Saturday, month: April, year: 2015}
-  - {date: 12, day: Sunday, month: April, year: 2015}
+  - 2015-04-10
+  - 2015-04-11
+  - 2015-04-12
   draft: false # set to true if the programme is draft only.
   fundraising:
   - given: Joaquin 
@@ -47,6 +51,7 @@ conference:
     institute: Facebook
   sponsors:
   - name: Max-Planck-ETH Center for Learning Systems
+  - name: Facebook
 baseurl: "/dali2015" # the subpath of your site, e.g. /blog/
 url: "http://dalimeeting.org" # the base hostname & protocol for your site
 twitter_username: 
