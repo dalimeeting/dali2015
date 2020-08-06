@@ -3,10 +3,10 @@ title:  "Learning Theory"
 layout: multitrack
 organizer_url: http://cesa-bianchi.di.unimi.it/DALI/
 organizers:
-- firstname: Nicolò
-  lastname: Cesa-Bianchi
-- firstname: Ulrike
-  lastname:  von Luxburg
+- given: Nicolò
+  family: Cesa-Bianchi
+- given: Ulrike
+  family:  von Luxburg
 talks:
 - title: ""
   start: "09:30"

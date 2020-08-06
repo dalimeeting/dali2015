@@ -2,17 +2,23 @@
 title:  "DALI Symposium"
 layout: singletrack
 organizers:
-- firstname: Thomas
-  lastname: Hofmann
+- given: Thomas
+  family: Hofmann
 talks:
 - title: "Small-scale Mobile Robotics"
   start: "9:30"
   end: "10:00"
-  speaker: Metin Sitti, MPI Stuttgart
+  author: 
+  - given: Metin 
+    family: Sitti
+    institute: MPI Stuttgart
 - title: "Probabilistic Programming; ways forward"
   start: "10:00"
   end: "10:30"
-  speaker: Frank Wood, University of Oxford
+  author: 
+  - given: Frank 
+    family: Wood
+    institute: University of Oxford
 - title: coffee and poster session
   start: "10:30"
   end: "13:00"
@@ -22,11 +28,35 @@ talks:
 - title: "Probabilistic Numerics — Uncertainty in deterministic computation"
   start: "18:00"
   end: "18:30"
-  speaker: Philipp Hennig, MPI Tübingen
+  author:
+  - given: Philipp 
+    family: Hennig
+    institute: MPI Tübingen
 - title: "Panel Discussion"
   start: "19:00"
   end: "20:00"
-  speaker: "Thomas Hoffman (Chair, ETH Zurich), Ralf Herbrich (Amazon), Alex Graves (Google DeepMind), Yann Le Cun (Facebook AI Research), Bernhard Scholkopf (MPI Tuebingen), Neil Lawrence (University of Sheffield) and Zoubin Ghaharamani (University of Cambridge)"
+  author: 
+  - given: Thomas 
+    family: Hoffman
+    institute: ETH Zurich
+  - given: Ralf 
+    family: Herbrich 
+    institute: Amazon
+  - given: Alex 
+    family: Graves 
+    institute: Google DeepMind
+  - given: Yann 
+    family: Le Cun 
+    institute: Facebook AI Research
+  - given: Bernhard 
+    family: Schoelkopf 
+    institute: MPI Tuebingen
+  - given: Neil D.
+    family: Lawrence
+    institute: University of Sheffield
+  - given: Zoubin 
+    family: Ghaharamani
+    institute: University of Cambridge
 - title: "Dinner"
   start: "20:00"
 ---

@@ -1,6 +1,5 @@
 # Site settings
 title: DALI 2015 - Data Learning and Inference
-venue: La Palma (Canaries, Spain)
 banner: DSC015811.jpeg
 permalink: "/:categories/:title.html"
 plugins:
@@ -10,11 +9,23 @@ plugins:
 remote_theme: lawrennd/proceedings
 style: dali
 
+baseurl: "/dali2015" # the subpath of your site, e.g. /blog/
+url: "http://dalimeeting.org" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  dalimeeting
+author:
+  name: DALI
+  
 ghub:
   edit: true
   repository: dali2015
 
 conference:
+  full_name: Data Learning and Inference
+  name: Data Learning and Inference
+  short_name: DALI
+  location: La Palma, Canary Islands, Spain
+  year: 2015
   venue: Hotel H10 Taburiente Playa
   venue_url: http://www.hotelh10taburienteplaya.com/en/index.html
   hosts:
@@ -35,11 +46,6 @@ conference:
     family: Schölkopf
     url: "http://ei.is.tuebingen.mpg.de/person/bs"
     institute: MPI Tübingen
-  full_name: Data Learning and Inference
-  name: Data Learning and Inference
-  short_name: DALI
-  location: La Palma, Canary Islands, Spain
-  year: 2015
   month: April
   dates:
   - 2015-04-10
@@ -54,12 +60,7 @@ conference:
   sponsors:
   - name: Max-Planck-ETH Center for Learning Systems
   - name: Facebook
-baseurl: "/dali2015" # the subpath of your site, e.g. /blog/
-url: "http://dalimeeting.org" # the base hostname & protocol for your site
-twitter_username: 
-github_username:  dalimeeting
-author:
-  name: DALI
+
 
 # Build settings
 markdown: kramdown
