@@ -22,7 +22,8 @@ ghub:
 
 conference:
   draft: false # set to True if the programme is draft only.
-  instance: 1st
+  instance: First
+  styling: Workshop on
   full_name: Data Learning and Inference
   name: Data Learning and Inference
   short_name: DALI
@@ -31,23 +32,25 @@ conference:
   venue: Hotel H10 Taburiente Playa
   venue_url: http://www.hotelh10taburienteplaya.com/en/index.html
   hosts:
-  organizers:
-  - family: Ghaharamani
-    given: Zoubin
-    url: "http://mlg.eng.cam.ac.uk/zoubin/"
-    institute: University of Cambridge
-  - given: Thomas 
-    family: Hoffman
-    url: "http://www.da.inf.ethz.ch/people/ThomasHofmann/"
-    institute: ETH Zurich
-  - given: Neil D.
-    family: Lawrence
-    url: "http://inverseprobability.com"
-    institute: University of Sheffield
-  - given: Bernhard 
-    family: Schölkopf
-    url: "http://ei.is.tuebingen.mpg.de/person/bs"
-    institute: MPI Tübingen
+  chairs:
+  - type: Program Chairs
+    people:
+    - family: Ghaharamani
+      given: Zoubin
+      url: "http://mlg.eng.cam.ac.uk/zoubin/"
+      institute: University of Cambridge
+    - given: Thomas 
+      family: Hoffman
+      url: "http://www.da.inf.ethz.ch/people/ThomasHofmann/"
+      institute: ETH Zurich
+    - given: Neil D.
+      family: Lawrence
+      url: "http://inverseprobability.com"
+      institute: University of Sheffield
+    - given: Bernhard 
+      family: Schölkopf
+      url: "http://ei.is.tuebingen.mpg.de/person/bs"
+      institute: MPI Tübingen
   month: April
   dates:
   - 2015-04-10
